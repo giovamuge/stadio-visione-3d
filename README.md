@@ -1,4 +1,4 @@
-# STADIO Visione 3D 👟
+# Visione 3D 🚀
 
 This is a simple Vue component with Three.js to display any 3d object in usdz and obj format with its materials.
 
