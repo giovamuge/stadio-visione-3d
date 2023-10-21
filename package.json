@@ -1,0 +1,42 @@
+{
+	"name": "@stadio/visione-3d",
+	"version": "0.0.2",
+	"files": [
+		"dist"
+	],
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"dev": "vite",
+		"build": "vue-tsc && vite build",
+		"preview": "vite preview"
+	},
+	"dependencies": {
+		"three": "^0.157.0",
+		"vue": "^3.3.4"
+	},
+	"devDependencies": {
+		"@types/node": "^20.8.7",
+		"@types/three": "^0.157.0",
+		"@vitejs/plugin-vue": "^4.2.3",
+		"prettier": "3.0.3",
+		"typescript": "^5.0.2",
+		"vite": "^4.4.5",
+		"vue-tsc": "^1.8.5"
+	},
+	"outDir": "dist",
+	"declaration": true,
+	"main": "./dist/visione-3d.umd.cjs",
+	"module": "./dist/visione-3d.js",
+	"exclude": [
+		"src/App.vue",
+		"src/main.ts"
+	],
+	"exports": {
+		".": {
+			"import": "./dist/visione-3d.js",
+			"require": "./dist/visione-3d.umd.cjs"
+		},
+		"./style.css": "./dist/style.css"
+	}
+}
