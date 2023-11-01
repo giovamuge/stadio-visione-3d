@@ -96,7 +96,7 @@ function onStartLoad() {
 }
 
 function onEndLoad() {
-	// isLoaded.value = false
+	isLoaded.value = false
 }
 
 const camera = new THREE.PerspectiveCamera(
